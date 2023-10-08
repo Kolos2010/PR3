@@ -1,39 +1,140 @@
-.list{
-    width: 320px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    margin-bottom: 10px;
+body {
+  background-color: #f8f8f8;
+}
+
+.header__mobilemenu{
+    display: none;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: TT Lakes;
+}
+
+nav {
+  display: flex;
+  margin-top: 10px;
+}
+
+ul svg {
+  vertical-align: middle;
 }
 
 .menu{
-    width: 320px;
-    height: 509px;
-    background-color: #F8F8F8;
+    margin-left: 40px;
 }
 
-h1{
+.menu_button{
     
-    font-family: Arial;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.menu__item{
-    position: absolute;
-    width: 310px;
-    height: 40px;
-    margin-top: 20px;
-   margin-bottom: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 16px;
+    color: #7E7E82;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
    
-
-    
 }
 
-.menu__item:hover{
-    border-left: 4px solid aqua;
-    border-bottom: 4px solid transparent;
-    border-top: 4px solid transparent;
-    
+.menu_button:hover{
+    border-color: aquamarine;
+    background-color: white;
 }
 
+.info{
+    margin-left: 40px;
+    font-family: TT Lakes;
+}
+
+.info__otziv{
+    margin-left: 27px;
+    color: #7E7E82;
+}
+
+.info__block{
+    display: flex;
+}
+
+.info__block--img{
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.info__block--text{
+    
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    margin-right: 10px;
+
+}
+
+.info__block--text__button{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 784px) {
+   .header__nmenu{
+    display: none;
+}
+
+    .header__mobilemenu{
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        background-color: #ffffff;
+        height: 88px;
+        align-items: center;
+        
+    }
+
+    .header__mobilemenu-left{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+ 
+    }
+
+    .header__mobilemenu-rigth{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info__block--img{
+        display: block;
+        width: 48%;
+        height: 100%;
+        border-radius: 10px;
+        margin-left: 10px;
+   
+    }
+
+    .menu_button{
+    
+        background-color: aquamarine;
+        border-color: transparent;
+        font-size: 16px;
+        color: #7E7E82;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 10px;
+        
+       
+    }
+
+}
