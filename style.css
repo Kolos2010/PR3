@@ -182,6 +182,16 @@ display: none;
         display: flex;
         flex-wrap: wrap;
      }
+
+     .info__block--text{
+    
+        display: flex;
+        flex-direction: column;
+    
+        width: 100%;
+        margin-right: 10px;
+    
+    }
  
      .info__block--img{
          
