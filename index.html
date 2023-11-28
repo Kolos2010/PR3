@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="Script/swiper.js" defer></script>
+    <script src="Script/script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Практическая_3</title>
   </head>
   <body>
@@ -13,7 +24,7 @@
 
         <div class="header__mobilemenu-left">
 
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="icon" onclick="toggleAnimation()" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="20" fill="#FF3E79"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11 13C11 12.4477 11.4477 12 12 12H28C28.5523 12 29 12.4477 29 13C29 13.5523 28.5523 14 28 14H12C11.4477 14 11 13.5523 11 13ZM11 20C11 19.4477 11.4477 19 12 19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H12C11.4477 21 11 20.5523 11 20ZM12 26C11.4477 26 11 26.4477 11 27C11 27.5523 11.4477 28 12 28H24C24.5523 28 25 27.5523 25 27C25 26.4477 24.5523 26 24 26H12Z" fill="white"/>
             </svg>
@@ -78,6 +89,47 @@
 
             </div>
                                             
+
+    </div>
+
+    <div class="sidebarmenu">
+     
+        <div class="sidebar__header">
+          <div class="sidebar__header--menu1">
+            <img
+              class="sidebar__header--menu __close"
+              src="./svg/close.svg"
+              alt=""
+              onclick="toggleAnimation()"
+            />
+            <img class="sidebar__header--menu" src="./svg/Logo.svg" alt="" />
+          </div>
+          <img class="sidebar__header--menu" src="./svg/search.svg" alt="" />
+        </div>
+
+        <div class="sidebar__list">
+          <ul class="sidebar__list1">
+            <li class="sidebar__list--item" tabindex="0">Ремонт техники</li>
+            <li class="sidebar__list--item" tabindex="0">Услуги и сервисы</li>
+            <li class="sidebar__list--item" tabindex="0">Продавцам техники</li>
+            <li class="sidebar__list--item" tabindex="0">Партнерам</li>
+            <li class="sidebar__list--item" tabindex="0">Наши сервисные центры</li>
+            <li class="sidebar__list--item" tabindex="0">Контакты</li>
+          </ul>
+        </div>
+
+        <div class="sidebar__footer">
+          <div class="sidebar__footer--icons">
+            <img class="sidebar__footer--icons__items" src="./svg/chat copy.svg" alt="">
+            <img class="sidebar__footer--icons__items" src="./svg/chat.svg" alt="">
+            <img class="sidebar__footer--icons__items" src="./svg/profile.svg" alt="">
+          </div>
+  
+          <div class="sidebar__footer--adress">
+            <p>mail@cps.com</p>
+            <p> <font size = "5"> <b> 8 800 890 8900 </b></font></p>
+          </div>
+        </div>
 
     </div>
 
@@ -167,7 +219,121 @@
     </div>    
     <img class="info__block--img" src="cps.png" alt="">
 </div>
+<div class="linetext">
+  <p class="linetext__text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+</div>
 </article>
+
+<div class="content">
+  <div class="swiper slider-1">
+    <div class="swiper-wrapper grid">
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/lenovo.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/samsung.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/apple.svg" alt="" width="40"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/viewsonic.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/bosch.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+   
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/hp.svg" alt="" width="40"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+
+      <span id="dots"></span>
+      
+     
+      <span id="more1024">
+        
+
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/aser.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/sony.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+      
+      </span>
+    
+      <span id="dots"></span>
+      
+     
+      <span id="more">
+
+      <div class="swiper-slide">
+        <div class="content-card" >
+          <img class="icon__up--item--size" src="./SVG/lenovo.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/samsung.svg" alt="" width="108"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="content-card">
+          <img class="icon__up--item--size" src="./SVG/apple.svg" alt="" width="40"/>
+          <img class="icon__up--item--size-next" src="./SVG/next.svg" alt="" width="40"/> 
+        </div>
+      </div>
+
+    </span>
+    </div>
+   
+
+     
+
+  
+
+      <button id="btn" onclick="moreRead()">Подробнее</button>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
 
 
 
